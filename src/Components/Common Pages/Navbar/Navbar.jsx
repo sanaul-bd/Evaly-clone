@@ -10,7 +10,7 @@ import Shop from '../../Shop/Shop';
 function Navbar() {
     return (
         <>
-            <div className="navbar bg-base-100 flex ">
+            <div className="navbar flex ">
                 <div className="navbar-start">
                     <Link className='font-bold text-2xl' to={'/'}>Evaly</Link>
                 </div>
