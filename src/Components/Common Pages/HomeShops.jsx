@@ -127,7 +127,7 @@ const HomeProducts = () => {
             {/* product cards and  */}
             <div
                 // onClick={}
-                className='lg:flex lg:flex-row lg:gap-x-4 lg:my-4  lg:w-full flex flex-col items-center my-2 sm:grid md:grid sm:grid-cols-2 md:grid-cols-3 sm:flex-none md:flex-none md:ps-20'
+                className='lg:flex lg:flex-row lg:gap-x-4 lg:my-4  lg:w-full flex flex-col items-center my-2 sm:grid md:grid sm:grid-cols-2 md:grid-cols-3'
             >
                 {
                     products.map((product) =>

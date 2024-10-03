@@ -5,43 +5,48 @@ import { Link } from 'react-router-dom';
 
 const Footer = () => {
     return (
-        <>
-            <hr className='my-3'/>
-            <footer className="footer bg-base-100 text-base-content p-1 mt-3">
-                <div className='w-full'>
+        <div className=''>
+            <hr className='mb-6' />
+            <footer className="footer bg-base-100 text-gray-400 px-3 py-10 mt-3 rounded text-base flex justify-around ">
+                <div className=''>
                     <Link className='font-bold text-2xl' to={'/'}>Evaly</Link>
                     <span>Evaly corporation. </span>
                     <span>Belive in you. </span>
                     <div className='w-full flex justify-between items-center mt-3'>
                         <p className='font-medium'>Follow Us</p>
-                        <div className='w-3/4 flex justify-evenly items-center py-1'>
-                            <span className='text-red-400 font-bold cursor-pointer text-lg'><FaFacebookF /> </span>
-                            <span className='text-red-400 font-bold cursor-pointer text-lg'><AiOutlineYoutube /> </span>
-                            <span className='text-red-400 font-bold cursor-pointer text-lg'><FaInstagram /> </span>
+                        <div className='ms-2 flex gap-x-3 py-1'>
+                            <span className='hover:text-white font-bold cursor-pointer text-lg'><FaFacebookF /> </span>
+                            <span className='hover:text-white font-bold cursor-pointer text-lg'><AiOutlineYoutube /> </span>
+                            <span className='hover:text-white font-bold cursor-pointer text-lg'><FaInstagram /> </span>
                         </div>
                     </div>
                 </div>
-                <nav>
+                <nav className=''>
                     <h6 className="footer-title">Services</h6>
-                    <a className="link link-hover">Branding</a>
-                    <a className="link link-hover">Design</a>
-                    <a className="link link-hover">Marketing</a>
-                    <a className="link link-hover">Advertisement</a>
+                    <Link className="hover:text-white">Branding</Link>
+                    <Link className="hover:text-white">Design</Link>
+                    <Link className="hover:text-white">Marketing</Link>
+                    <Link className="hover:text-white">Advertisement</Link>
                 </nav>
                 <nav>
                     <h6 className="footer-title">Company</h6>
-                    <Link to={'/aboutus'}>About us</Link>
-                    <Link to={'/contact'}>Contact</Link>
-                    <Link to={'/jobs'}>Jobs</Link>
+                    <Link className=' hover:text-white' to={'/aboutus'}>About Us</Link>
+                    <Link className=' hover:text-white' to={'/contact'}>Contact Us</Link>
+                    <Link className=' hover:text-white' to={'/jobs'}>Jobs Search</Link>
+                    <Link className=' hover:text-white' to={'/jobs'}>Our Team</Link>
                 </nav>
                 <nav>
                     <h6 className="footer-title">Legal</h6>
-                    <Link to={'/t&u'}>Terms of use</Link>
-                    <Link to={'/privacy'}>Privacy policy</Link>
-                    <Link to={'/cookie'}>Cookie policy</Link>
+                    <Link className=' hover:text-white' to={'/t&u'}>Terms of use</Link>
+                    <Link className=' hover:text-white' to={'/privacy'}>Privacy policy</Link>
+                    <Link className=' hover:text-white' to={'/cookie'}>Cookie policy</Link>
+                    <Link className=' hover:text-white' to={'/cookie'}>Article </Link>
                 </nav>
             </footer>
-        </>
+            <div className='pt-4 text-center'>
+                <span className='text-gray-400 font-semibold'>All Right Reserved DevConfig-BD@</span>
+            </div>
+        </div>
     );
 };
 

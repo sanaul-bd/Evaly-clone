@@ -24,7 +24,7 @@ function Navbar() {
                 {/* Cart -- Sign in */}
                 <div className="navbar-end flex gap-x-2 pe-3">
                     <span className='px-4 py-3 bg-slate-200 cursor-pointer text-black '><FaCartArrowDown /></span>
-                    <span className='flex items-center px-3 py-2 bg-slate-200 gap-x-1 cursor-pointer text-black '><FaUser /><Link to={'/signin'}>Sign in</Link> </span>
+                    <span className='flex items-center px-3 py-2 bg-slate-200 gap-x-1 cursor-pointer text-black '><FaUser /><Link to={'/Login'}>Sign in</Link> </span>
                 </div>
             </div>
             <hr className='mt-2 mb-3' />
